@@ -1,8 +1,8 @@
-;;; readline-complete.el --- offers completions in shell mode 
-     
+;;; readline-complete.el --- offers completions in shell mode
+
 ;; Copyright (C) 2012 Christopher Monsanto
 ;; Copyright (C) 2014 Dmitry Gutov
-     
+
 ;; Author: Christopher Monsanto <chris@monsan.to>
 ;; Version: 1.0
 
@@ -88,7 +88,7 @@
 ;; customizations. Consider putting some of the following lines in
 ;; your bashrc (you can test if we are using Emacs for the session by
 ;; testing [[ $INSIDE_EMACS ]]. Note that readline-complete should
-;; work with the default readline settings.  
+;; work with the default readline settings.
 
 ;; - bell-style: it is preferable to disable the bell.
 ;;   bind 'set bell-style none'
@@ -123,7 +123,7 @@
 ;;   as input according to its bindings. Best to make tab characters not
 ;;   replaced by the default binding "\C-i": complete. Instead:
 ;;   bind '"\C-i": self-insert'
-;;   
+;;
 
 ;; *** Note that this package works with READLINE. Maybe editline (BSD
 ;; programs), NOT haskeline (ghci, unfortunately). Shells that don't use
@@ -242,7 +242,7 @@ rlc-attempts * rlc-timeout seconds.")
     )
   "ac-rlc works by checking the current prompt. This list holds
   all of ac-rlc's known prompts, along with an auto-complete
-  prefix to recognize contexts appropriate to the application. 
+  prefix to recognize contexts appropriate to the application.
 
 To disable ac-rlc for an application, add '(prompt ac-prefix-rlc-disable).")
 
